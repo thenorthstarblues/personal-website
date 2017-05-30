@@ -2461,18 +2461,13 @@
 /* Header */
 
 	#header {
-		background-color: #1f1815;
-		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-color: rgba(0,0,0, 0.7);
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em 0 0;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
@@ -2505,7 +2500,7 @@
 		left: 0;
 		padding: 0 4em 6em 0;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		width: 35%;
 	}
 
@@ -2929,11 +2924,7 @@
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../images/bg.jpg");
-				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
-				background-size: auto,							cover;
+				background-color: #4C4C4C;
 				bottom: auto;
 				left: auto;
 				padding: 4em 4em 6em 4em;
