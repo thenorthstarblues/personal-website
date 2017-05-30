@@ -1,152 +1,67 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "David Martin"
-theme = "hugo-strata-theme"
-disqusShortname = "spf13"
-# Enable Google Analytics by inserting your tracking code
-googleAnalytics = ""
-# Define how many posts should appear on a site
-paginate = 10
+## Basic Configuration
 
+baseurl = "http://localhost:1313/"
+builddrafts = true
+canonifyurls = true
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Erlich Bachman"
+title = "Erlich Bachman"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
 [params]
-	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
-	name = "David Martin"
-	description = "Describe your website"
+author = "Erlich Bachman"
+intro = "Startup Guru Extraordinaire"
+description = "Now @Pied Piper. Previously @Hacker Hostel, @Bachmanity and @Aviato. <br/> \"What is F times 5? It's Fleventy-five.\""
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
 
-	# Format dates with Go's time formatting
-	date_format = "2006-01-02"
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
 
-	# Add custom assets with their paths relative to the static folder
-	custom_js   = []
-	custom_css  = []
+## Social Accounts
+[params.social]
+github = "<username>"
+instagram = "<username>"
+linkedin = "<username>"
+twitter = "<username>"
+facebook = "<username>"
+google = "<username>"
+stackoverflow = "<username>"
+email = "you@example.com"
 
+## Extras
+[params.extra]
+copyright = "© 2016. Erlich Bachman. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = true
+hightlightjs = true
 
-	[params.sidebar]
-		# Replace the avatar with a picture of your own under static/images
-		avatar = "david.jpg"
-		# Use Markdown to format the string. This works nearly all over the theme
-		bio = "I'm David I'm doin things"
-		# The icons will be shown if you enter your username
-		twitter = "DaveMartin_"
-		github = "thenorthstarblues"
-    instagram = "thenorthstarblues"
-		gitlab = ""
-		dribbble = ""
-		facebook = ""
-		googleplus = ""
-		flickr = ""
-		linkedin = "davidjamesmartin1"
-
-		copyright = [
-			"Powered by [Hugo](https://gohugo.io/) and [Strata](https://github.com/digitalcraftsman/hugo-strata-theme)",
-			"",
-			""
-		]
-
-
-	[params.about]
-		hide  = false
-		title = "I'm makin this here website"
-		content = "Gotta talk about ME"
-
-
-	[params.portfolio]
-		hide  = true
-		title = "Recent Work"
-
-		# The images and thumbnails are stored under static/images
-		# Create and change subfolders as you like
-		[[params.portfolio.gallery]]
-			image = "fulls/01.jpg"
-			thumb = "thumbs/01.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/02.jpg"
-			thumb = "thumbs/02.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/03.jpg"
-			thumb = "thumbs/03.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/04.jpg"
-			thumb = "thumbs/04.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/05.jpg"
-			thumb = "thumbs/05.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/06.jpg"
-			thumb = "thumbs/06.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-	[params.recentposts]
-		hide  = true
-		title = "Recent blog posts"
-
-	[params.contact]
-		hide  = false
-		title = "Get In Touch"
-		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
-
-		address = [
-			"Portland, OR",
-			"United States"
-		]
-		phone = "404-580-2233"
-
-		# Since this template is static, the contact form uses www.formspree.io as a
-		# proxy. The form makes a POST request to their servers to send the actual
-		# email. Visitors can send up to a 1000 emails each month for free.
-	    #
-	    # What you need to do for the setup?
-	    #
-	    # - set your email address under 'email' below
-	    # - upload the generated site to your server
-	    # - send a dummy email yourself to confirm your account
-	    # - click the confirm link in the email from www.formspree.io
-	    # - you're done. Happy mailing!
-		email = "davidjmartin01@gmail.com"
-
-		[params.contact.form]
-			# Set custom strings for the form if your native
-			# language isn't English
-			name = "Name"
-			email = "Email"
-			message = "Message"
-			submit = "Send message"
-
-
-# Menu links that appear on the left sidebar
+## Main Menu
 [[menu.main]]
-	name = "Home"
-	url  = "/"
-	weight = 10
-
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog/"
 [[menu.main]]
-	name = "Work"
-	url  = "post/"
-	weight = 20
-
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
 [[menu.main]]
-	name = "Blog"
-	url  = "post/"
-	weight = 30
-
-[[menu.main]]
-	name = "Stories"
-	url  = "post/"
-	weight = 40
+    name = "coderag"
+    identifier = "coderag"
+    weight = 300
+    url = "/coderag/"
