@@ -1,1 +1,1 @@
-This is the repo for my personal website. It was created with [Hugo](https://gohugo.io/) using the [Strata](https://github.com/digitalcraftsman/hugo-strata-theme) theme.
+This is the repo for my personal website. It was created with [Hugo](https://gohugo.io/) using the [Hyde-X](https://github.com/zyro/hyde-x) theme.
