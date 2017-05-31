@@ -1,67 +1,74 @@
-## Basic Configuration
+baseurl = "http://example.com/"
+title = "David Martin"
+languageCode = "en-us"
+disqusShortname = "your_disqus_shortname" # Optional, enable Disqus integration
+MetaDataFormat = "toml"
+theme = "hyde-x"
+paginate = 10
 
-baseurl = "http://localhost:1313/"
-builddrafts = true
-canonifyurls = true
-languageCode = "en-US"
+[author]
+    name = "David Martin"
 
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = "/blog/:year/:month/:day/:title/"
 
-author = "Erlich Bachman"
-title = "Erlich Bachman"
+[taxonomies]
+    # Optional. Use if you want tags and lists.
+    category = "categories"
 
-theme = "hugo-goa"
-
-## Hugo Built-in Features
-disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
-googleAnalytics = "XYZ"
-enableRobotsTXT = true
-
-## Site Settings
+#
+# All parameters below here are optional and can be mixed and matched.
+#
 [params]
-author = "Erlich Bachman"
-intro = "Startup Guru Extraordinaire"
-description = "Now @Pied Piper. Previously @Hacker Hostel, @Bachmanity and @Aviato. <br/> \"What is F times 5? It's Fleventy-five.\""
-authorimage = "headshot.jpg"
-dateformat = "Jan 2, 2006"
+    # If false display full article contents in blog index.
+    # Otherwise show description and 'read on' link to individual blog post page.
+    # Default (if omitted) is true.
+    truncate = true
 
-## Site Meta Settings
-[params.meta]
-description = "Simple minimalist theme"
-keywords = "minimalist,blog,goa,hugo,developer"
+    # Used when a given page doesn't set its own.
+    defaultDescription = "Your default page description"
+    defaultKeywords = "your,default,page,keywords"
 
-## Social Accounts
-[params.social]
-github = "<username>"
-instagram = "<username>"
-linkedin = "<username>"
-twitter = "<username>"
-facebook = "<username>"
-google = "<username>"
-stackoverflow = "<username>"
-email = "you@example.com"
+    # Hide estimated reading time for posts.
+    # Default (if omitted) is false.
+    hideReadingTime = false
 
-## Extras
-[params.extra]
-copyright = "© 2016. Erlich Bachman. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
-poweredby = true
-hightlightjs = true
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
+    theme = "theme-base-0x"
 
-## Main Menu
-[[menu.main]]
-    name = "blog"
-    weight = 100
-    identifier = "blog"
-    url = "/blog/"
-[[menu.main]]
-    name = "about"
-    identifier = "about"
-    weight = 200
-    url = "/about/"
-[[menu.main]]
-    name = "coderag"
-    identifier = "coderag"
-    weight = 300
-    url = "/coderag/"
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "sunburst"
+
+    # Optional additional custom CSS file URL, will override other styles.
+    customCSS = ""
+
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = "Your favourite quote or soundbite."
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Blog".
+    home = "Blog"
+
+    # Metadata used to drive integrations.
+    googleAnalytics = "Your Google Analytics tracking code"
+    gravatarHash = "MD5 hash of your Gravatar email address"
+
+    # Sidebar social links, these must be full URLs.
+    github = ""
+    bitbucket = ""
+    stackOverflow = ""
+    linkedin = ""
+    googleplus = ""
+    facebook = ""
+    twitter = ""
+    youtube = ""
+
+    # Other social-like sidebar links
+    rss = false  # switch to true to enable RSS icon link
+    flattr = ""  # populate with your flattr uid
