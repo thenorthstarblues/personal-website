@@ -1,5 +1,6 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+    <div class="face-img"></div>
     <div class="sidebar-about">
       {{ if isset .Site.Params "gravatarHash" }}
         <img src="https://www.gravatar.com/avatar/{{ .Site.Params.gravatarHash }}?s=200"
@@ -18,15 +19,15 @@
 
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item">
-      {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github fa"></i></a>{{ end }}
-      {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket fa"></i></a>{{ end }}
-      {{ with .Site.Params.stackOverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow fa"></i></a>{{ end }}
-      {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin fa"></i></a>{{ end }}
-      {{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus fa"></i></a>{{ end }}
-      {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook fa"></i></a>{{ end }}
-      {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter fa"></i></a>{{ end }}
-      {{ with .Site.Params.instagram }}<a href="{{ . }}"><i class="fa fa-instagram fa"></i></a>{{ end }}
-      {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube fa"></i></a>{{ end }}
+      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank"><i class="fa fa-github fa"></i></a>{{ end }}
+      {{ with .Site.Params.bitbucket }}<a href="{{ . }}" target="_blank"><i class="fa fa-bitbucket fa"></i></a>{{ end }}
+      {{ with .Site.Params.stackOverflow }}<a href="{{ . }}" target="_blank"><i class="fa fa-stack-overflow fa"></i></a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a href="{{ . }}" target="_blank"><i class="fa fa-linkedin fa"></i></a>{{ end }}
+      {{ with .Site.Params.googleplus }}<a href="{{ . }}" target="_blank"><i class="fa fa-google-plus fa"></i></a>{{ end }}
+      {{ with .Site.Params.facebook }}<a href="{{ . }}" target="_blank"><i class="fa fa-facebook fa"></i></a>{{ end }}
+      {{ with .Site.Params.twitter }}<a href="{{ . }}" target="_blank"><i class="fa fa-twitter fa"></i></a>{{ end }}
+      {{ with .Site.Params.instagram }}<a href="{{ . }}" target="_blank"><i class="fa fa-instagram fa"></i></a>{{ end }}
+      {{ with .Site.Params.youtube }}<a href="{{ . }}" target="_blank"><i class="fa fa-youtube fa"></i></a>{{ end }}
       {{ if .Site.Params.rss }}<a href="{{ "/index.xml" | absURL }}" type="application/rss+xml"><i class="fa fa-rss-square fa"></i></a>{{ end }}
       </li>
     </ul>
@@ -48,7 +49,7 @@
 
     <div class="copy">
       <p>
-        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+        Powered by <a href="http://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/zyro/hyde-x" target="">Hyde-X</a></p>
     </div>
   </div>
 </div>
