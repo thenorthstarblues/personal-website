@@ -33,7 +33,7 @@ paginate = 10
 
     # Hide estimated reading time for posts.
     # Default (if omitted) is false.
-    hideReadingTime = false
+    hideReadingTime = true
 
     # Changes sidebar background and link/accent colours.
     # See below for more colour options.
@@ -49,24 +49,25 @@ paginate = 10
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
-    tagline = "Your favourite quote or soundbite."
+    tagline = "Make it so."
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Blog".
-    home = "Blog"
+    home = "About"
 
     # Metadata used to drive integrations.
     googleAnalytics = "Your Google Analytics tracking code"
     gravatarHash = "MD5 hash of your Gravatar email address"
 
     # Sidebar social links, these must be full URLs.
-    github = ""
+    github = "https://github.com/thenorthstarblues"
     bitbucket = ""
     stackOverflow = ""
-    linkedin = ""
+    linkedin = "https://linkedin.com/in/davidjamesmartin1"
     googleplus = ""
     facebook = ""
-    twitter = ""
+    twitter = "https://twitter.com/DaveMartin_"
+    instagram = "https://instagram.com/thenorthstarblues"
     youtube = ""
 
     # Other social-like sidebar links
