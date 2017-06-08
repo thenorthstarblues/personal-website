@@ -1552,7 +1552,7 @@
 
 	body {
 		background: #fff;
-		font-family: 'Helvetica Neue', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1571,7 +1571,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Helvetice Neue', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1600,6 +1600,7 @@
 
 		h2.alt {
 			color: rbga(255,255,255,0.8);
+			font-family: 'Lato', sans-serif;
 		}
 
 			h2.alt strong {

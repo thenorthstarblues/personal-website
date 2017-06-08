@@ -39,10 +39,10 @@ theme = "prologue"
 # Portfolio column two
 
 [[params.portfolio2]]
-  title = "See what I'm working on now"
+  title = "Hops of Grace"
   alt = ""
   source = "img/pic04.jpg"
-  url = "http://github.com/thenorthstarblues"
+  url = "http://github.com/ayoung09/Hops-of-Grace"
 
 # Portfolio column 3
 
