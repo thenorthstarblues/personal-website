@@ -1,0 +1,53 @@
+languageCode = "en-us"
+title = "David Martin"
+baseurl = "http://www.daviddoesathing.com/"
+theme = "prologue"
+
+[params]
+  name = "David Martin"
+  description = "Helping Friendly Developer"
+  copyright = "Untitled."
+
+[[params.social]]
+  medium = "twitter"
+  icon = "twitter"
+  link = "http://twitter.com/DaveMartin_"
+
+[[params.social]]
+  medium = "github"
+  icon = "github"
+  link = "http://github.com/thenorthstarblues"
+
+[[params.social]]
+  medium = "linkedin"
+  icon = "linkedin"
+  link = "http://linkedin.com/in/davidjamesmartin1"
+
+  [[params.social]]
+  medium = "instagram"
+  icon = "instagram"
+  link = "http://instagram.com/thenorthstarblues"
+
+# Portfolio column one
+
+[[params.portfolio1]]
+  title = "Mallets"
+  alt = ""
+  source = "img/pic02.jpg"
+  url = "https://www.playmallets.com"
+
+# Portfolio column two
+
+[[params.portfolio2]]
+  title = "See what I'm working on now"
+  alt = ""
+  source = "img/pic04.jpg"
+  url = "http://github.com/thenorthstarblues"
+
+# Portfolio column 3
+
+[[params.portfolio3]]
+  title = "Agile Armature"
+  alt = ""
+  source = "img/pic06.jpg"
+  url = "http://www.agile-armature.com"

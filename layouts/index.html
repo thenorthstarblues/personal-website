@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ .Title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+				<div class="top">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
+							<h1 id="title">{{ .Site.Params.name }}</h1>
+							<p>{{ .Site.Params.description }}</p>
+						</div>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Welcome</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-code">Work</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+				</div>
+				<div class="bottom">
+					<!-- Social Icons -->
+						<ul class="icons">
+              {{ range .Site.Params.social }}
+              <li><a href="{{ .link }}" class="icon fa-{{ .icon }}" target="_blank"><span class="label">{{ .medium }}</span></a></li>
+              {{ end }}
+						</ul>
+				</div>
+			</div>
+		<!-- Main -->
+			<div id="main">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								<h2 class="alt">Hi, I'm David.</h2>
+								<!--<p>Welcome to this nifty little website.</p>-->
+								<!--<span class="icon fa-coffee"></span>
+								<span class="icon fa-code"></span>
+								<span class="icon fa-bicycle"></span>-->
+							</header>
+							<footer>
+								<a href="#contact" class="button scrolly">Want to email me?</a>
+							</footer>
+						</div>
+					</section>
+
+					<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+							<header>
+								<!--<h2>About Me</h2>-->
+							</header>
+							<a href="#" class="image featured"><img src="img/about.jpg" alt="" /></a>
+							<p>To be honest, I'm not sure how I feel about this picture.</p>
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+							<header>
+								<!--<h2>Work</h2>-->
+							</header>
+							<p>Here are some things I've done.</p>
+              <div class="row">
+                <div class="4u 12u$(mobile)">
+                  {{ range .Site.Params.portfolio1 }}
+                  <article class="item">
+                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <!--<header>-->
+                      <h3>{{ .title }}</h3>
+                    <!--</header>-->
+                  </article>
+                  {{ end }}
+                </div>
+
+                <!--<div class="4u 12u$(mobile)">
+                  {{ range .Site.Params.portfolio2 }}
+                  <article class="item">
+                    <a href="{{ .url }}" class="image fit" id="two">
+											<span class="icon fa-github fa-5x"></span>
+										</a>
+                      <h3>{{ .title }}</h3>
+                  </article>
+                  {{ end }}
+                </div>-->
+
+
+                <div class="4u 12u$(mobile)">
+                  {{ range .Site.Params.portfolio3 }}
+                  <article class="item">
+                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <!--<header>-->
+                      <h3>{{ .title }}</h3>
+                    <!--</header>-->
+                  </article>
+                  {{ end }}
+                </div>
+              </div>
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+							<header>
+								<!--<h2>Get in touch</h2>-->
+							</header>
+							<!--<p>Do an email!</p>-->
+							<form method="post" action="https://formspree.io/davidjmartin01@gmail.com">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+					<ul class="copyright">
+						<li>Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/sethmacleod/prologue/tree/e537b6fe81be6483f22ff2b86cd2c832976fbf7c">Prologue</a>.</li>
+					</ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/jquery.scrollzer.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/js/main.js"></script>
+	</body>
+</html>
